@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  8letter 복구중 안내 페이지 — GCP 밖 대기 서버(GitHub Pages)에 상시 배포용 템플릿.
+  장애 시 고대디 DNS 에서 8-letter.com 을 이 페이지로 전환 (절차: docs/operations.md §7).
+  ⚠️ 색·폰트 = src/styles/tokens.css 값 복사본 (독립 배포라 import 불가 — 토큰 SSOT 변경 시 여기도 동기).
+-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <title>에잇레터 — 점검 중입니다</title>
+  <style>
+    :root {
+      /* tokens.css 동기 값 */
+      --font-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --color-bg-page: #F8F9F6;
+      --color-text: #0a0a0a;
+      --color-text-secondary: #4a4a4a;
+      --color-text-muted: #909090;
+      --color-primary: #0a0a0a;
+      --space-4: 16px;
+      --space-8: 32px;
+      --gnb-logo-size: 31px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--color-bg-page);
+      color: var(--color-text);
+      font-family: var(--font-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-4);
+    }
+    main { max-width: 420px; text-align: center; }
+    .logo { margin-bottom: var(--space-8); }
+    .logo img { width: auto; height: var(--gnb-logo-size); display: inline-block; }
+    h1 { font-size: 24px; font-weight: 700; line-height: 1.4; margin-bottom: var(--space-4); }
+    p { font-size: 16px; line-height: 1.7; color: var(--color-text-secondary); margin-bottom: var(--space-4); }
+    .contact { font-size: 14px; color: var(--color-text-muted); margin-top: var(--space-8); }
+    .contact a { color: var(--color-text); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo"><img src="eight_bi_text_b.svg" alt="에잇레터" /></div>
+    <h1>지금 서비스를 점검하고 있어요</h1>
+    <p>일시적인 문제로 잠시 문을 닫았습니다.<br />
+    저장하신 명식과 기록은 안전하게 보관되고 있으니 걱정하지 않으셔도 됩니다.</p>
+    <p>복구가 끝나는 대로 바로 다시 열겠습니다.</p>
+    <div class="contact">
+      급한 문의: <a href="mailto:8ight.letter@gmail.com">8ight.letter@gmail.com</a>
+    </div>
+  </main>
+</body>
+</html>
